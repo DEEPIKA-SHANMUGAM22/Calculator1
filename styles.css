@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff; /* White background for the whole page */
+}
+
+.calculator {
+    background: #f2f2f2; /* Light gray background for the calculator body */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    text-align: center;
+    width: 350px;
+}
+
+.display input {
+    width: 100%;
+    padding: 15px;
+    font-size: 2em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff; /* White background for the display */
+    color: black; /* Black text for readability */
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1); /* Inner shadow for display */
+}
+
+/* Layout for buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* General button styling */
+button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Number buttons */
+button:nth-child(5), button:nth-child(6), button:nth-child(7),
+button:nth-child(9), button:nth-child(10), button:nth-child(11),
+button:nth-child(13), button:nth-child(14), button:nth-child(15),
+button:nth-child(17) {
+    background-color: #3498db; /* Blue color for number buttons */
+    color: white; /* White text for contrast */
+}
+
+button:nth-child(5):hover, button:nth-child(6):hover, button:nth-child(7):hover,
+button:nth-child(9):hover, button:nth-child(10):hover, button:nth-child(11):hover,
+button:nth-child(13):hover, button:nth-child(14):hover, button:nth-child(15):hover,
+button:nth-child(17):hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Operator buttons */
+button:nth-child(4), button:nth-child(8), button:nth-child(12),
+button:nth-child(16), button:nth-child(18) {
+    background-color: #e67e22; /* Orange color for operator buttons */
+    color: white; /* White text for contrast */
+}
+
+button:nth-child(4):hover, button:nth-child(8):hover, button:nth-child(12):hover,
+button:nth-child(16):hover, button:nth-child(18):hover {
+    background-color: #d35400; /* Darker orange on hover */
+}
+
+/* Special function buttons (Clear, Delete, √) */
+button:nth-child(1), button:nth-child(2), button:nth-child(3) {
+    background-color: #e74c3c; /* Red color for special function buttons */
+    color: white; /* White text for contrast */
+}
+
+button:nth-child(1):hover, button:nth-child(2):hover, button:nth-child(3):hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Equal button styling */
+button:nth-child(19) {
+    background-color: #27ae60; /* Green color for equal button */
+    color: white; /* White text for contrast */
+}
+
+button:nth-child(19):hover {
+    background-color: #229954; /* Darker green on hover */
+}
